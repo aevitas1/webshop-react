@@ -9,7 +9,7 @@ const LoginDropDown = () => {
         boxShadow="0 2px 4px 0 rgba(34,34,34, .2)"
         position="absolute"
         right="290px"
-        top="90%"
+        top="85%"
         minWidth="260px"
         letterSpacing="wide"
         cursor="initial"
