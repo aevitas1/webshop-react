@@ -32,7 +32,7 @@ const SidebarRight = () => {
             <Box
               position="absolute"
               right="32px"
-              bottom="32px"
+              top="65px"
               display={isHoveringLogin ? "block" : "none"}
             >
               <LoginDropDown />
@@ -81,7 +81,7 @@ const SidebarRight = () => {
             <Box
               position="absolute"
               right="32px"
-              bottom="32px"
+              top="65px"
               display={isHoveringCart ? "block" : "none"}
             >
               <ShoppingCart />

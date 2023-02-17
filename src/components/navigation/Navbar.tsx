@@ -2,6 +2,7 @@ import { Flex, Box, Image, LinkBox, LinkOverlay } from "@chakra-ui/react";
 import SidebarLeft from "./sidebar_left/SidebarLeft";
 import SidebarRight from "./sidebar_right/SidebarRight";
 import hm from "../../assets/hm.svg";
+import Infobar from "./Infobar";
 
 const Navbar = () => {
   return (
@@ -38,6 +39,7 @@ const Navbar = () => {
             </Flex>
           </Flex>
         </nav>
+        <Infobar />
       </Box>
     </>
   );
