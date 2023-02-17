@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Wrap, WrapItem } from "@chakra-ui/react";
 const ShoppingCart = () => {
   return (
     <>
@@ -9,18 +9,34 @@ const ShoppingCart = () => {
         position="absolute"
         right="32px"
         top="90%"
-        minWidth="250px"
+        minWidth="375px"
+        letterSpacing="wide"
+        cursor="initial"
+        display={{ base: "none", xl: "block" }}
       >
-        <Text fontSize="sm" fontWeight="bold">
-          Je winkelmandje is leeg
+        <Text fontSize="sm" fontWeight="semibold">
+          <Wrap pb="6" borderBottom="1px solid #d0d0d0">
+            <WrapItem>Je winkelmandje is leeg</WrapItem>
+          </Wrap>
         </Text>
-        <hr></hr>
-        <Text fontSize="sm" fontWeight="semibold" color="#707070">
-          Bestelwaarde
+        <Text fontSize="sm">
+          <Wrap
+            justify="space-between"
+            pt="4"
+            pb="4"
+            borderBottom="1px solid #000000"
+          >
+            <WrapItem fontWeight="semibold" color="#707070">
+              Bestelwaarde
+            </WrapItem>
+            <WrapItem fontWeight="semibold">€ 0.00</WrapItem>
+          </Wrap>
         </Text>
-        <hr></hr>
-        <Text fontSize="sm" fontWeight="bold">
-          Totaal
+        <Text fontSize="md" fontWeight="bold">
+          <Wrap justify="space-between" pt="4">
+            <WrapItem>Totaal</WrapItem>
+            <WrapItem>€ 0.00</WrapItem>
+          </Wrap>
         </Text>
       </Box>
     </>

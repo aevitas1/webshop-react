@@ -24,8 +24,8 @@ export const theme = extendTheme({
     black: 900,
   },
   fontSizes: {
-    xs: "0.6875rem",
-    sm: "0.8125rem",
+    xs: "10px",
+    sm: "11px",
     md: "1rem",
     lg: "1.125rem",
     xl: "1.25rem",
@@ -37,5 +37,12 @@ export const theme = extendTheme({
     "7xl": "4.5rem",
     "8xl": "6rem",
     "9xl": "8rem",
+  },
+  breakpoints: {
+    sm: "30em",
+    md: "48em",
+    lg: "62em",
+    // These have been set
+    xl: "70.25rem",
   },
 });
