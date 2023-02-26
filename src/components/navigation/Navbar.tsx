@@ -12,33 +12,31 @@ const Navbar = () => {
         pr={{ base: "3", xl: "8" }}
         pb={{ base: "0", xl: "4" }}
         pl={{ base: "3", xl: "8" }}
-        width="100vw"
+        width="100%"
       >
-        <nav>
+        <Flex
+          height={67}
+          justify={{ base: "none", xl: "space-between" }}
+          pl={{ base: "1rem", xl: "0" }}
+        >
+          <SidebarLeft />
+          <LinkBox>
+            <LinkOverlay href="/">
+              <Image
+                src={hm}
+                fill="red"
+                width={{ base: "36px", xl: "60px" }}
+                pt="6"
+              />
+            </LinkOverlay>
+          </LinkBox>
           <Flex
-            height={67}
-            justify={{ base: "none", xl: "space-between" }}
-            pl={{ base: "1rem", xl: "0" }}
+            w={{ base: "90vw", xl: "max-content" }}
+            justifyContent={{ base: "flex-end", xl: "none" }}
           >
-            <SidebarLeft />
-            <LinkBox>
-              <LinkOverlay href="/">
-                <Image
-                  src={hm}
-                  fill="red"
-                  width={{ base: "36px", xl: "60px" }}
-                  pt="6"
-                />
-              </LinkOverlay>
-            </LinkBox>
-            <Flex
-              w={{ base: "90vw", xl: "max-content" }}
-              justifyContent={{ base: "flex-end", xl: "none" }}
-            >
-              <SidebarRight />
-            </Flex>
+            <SidebarRight />
           </Flex>
-        </nav>
+        </Flex>
         <Infobar />
       </Box>
     </>

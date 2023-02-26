@@ -3,7 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 const Infobar = () => {
   return (
     <>
-      <Flex width="100vw" justifyContent="center" pt="8">
+      <Flex width="100%" justifyContent="center" pt="8">
         <Flex
           w={{ base: "100%", xl: "1008px" }}
           pr={{ base: "1.5rem", xl: "0" }}

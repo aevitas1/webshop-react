@@ -1,4 +1,4 @@
-import { Box, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Wrap, WrapItem } from "@chakra-ui/react";
 const ShoppingCart = () => {
   return (
     <>
@@ -10,34 +10,42 @@ const ShoppingCart = () => {
         right="32px"
         top="90%"
         minWidth="375px"
-        letterSpacing="wide"
         cursor="initial"
         display={{ base: "none", xl: "block" }}
       >
-        <Text fontSize="sm" fontWeight="semibold">
-          <Wrap pb="6" borderBottom="1px solid #d0d0d0">
-            <WrapItem>Je winkelmandje is leeg</WrapItem>
-          </Wrap>
-        </Text>
-        <Text fontSize="sm">
-          <Wrap
-            justify="space-between"
-            pt="4"
-            pb="4"
-            borderBottom="1px solid #000000"
-          >
-            <WrapItem fontWeight="semibold" color="#707070">
-              Bestelwaarde
-            </WrapItem>
-            <WrapItem fontWeight="semibold">€ 0.00</WrapItem>
-          </Wrap>
-        </Text>
-        <Text fontSize="md" fontWeight="bold">
-          <Wrap justify="space-between" pt="4">
-            <WrapItem>Totaal</WrapItem>
-            <WrapItem>€ 0.00</WrapItem>
-          </Wrap>
-        </Text>
+        <Wrap
+          pb="6"
+          borderBottom="1px solid #d0d0d0"
+          fontSize="sm"
+          fontWeight="semibold"
+          letterSpacing="wide"
+        >
+          <WrapItem>Je winkelmandje is leeg</WrapItem>
+        </Wrap>
+
+        <Wrap
+          justify="space-between"
+          pt="4"
+          pb="4"
+          borderBottom="1px solid #d0d0d0"
+          fontSize="sm"
+          letterSpacing="wide"
+        >
+          <WrapItem fontWeight="semibold" color="#707070">
+            Bestelwaarde
+          </WrapItem>
+          <WrapItem fontWeight="semibold">€ 0.00</WrapItem>
+        </Wrap>
+        <Wrap
+          justify="space-between"
+          pt="4"
+          fontSize="md"
+          fontWeight="bold"
+          letterSpacing="wide"
+        >
+          <WrapItem>Totaal</WrapItem>
+          <WrapItem>€ 0.00</WrapItem>
+        </Wrap>
       </Box>
     </>
   );

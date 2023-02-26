@@ -51,28 +51,28 @@ const AppLinks = () => {
             fontWeight="medium"
             cursor="pointer"
             letterSpacing="wide"
-            href="https://play.google.com/store/apps/details?id=com.hm.goe"
+            href="#"
             _hover={{ backgroundColor: "#f4eddd" }}
             pt="2"
             pb="2"
             pl="4"
             pr="4"
           >
-            H&M Android app
+            Onze Android app
           </Link>
           <Link
             fontSize="sm"
             fontWeight="medium"
             cursor="pointer"
             letterSpacing="wide"
-            href="https://apps.apple.com/nl/app/h-m-we-love-fashion/id834465911"
+            href="#"
             _hover={{ backgroundColor: "#f4eddd" }}
             pt="2"
             pb="2"
             pl="4"
             pr="4"
           >
-            H&M Iphone app
+            Onze Iphone app
           </Link>
         </Flex>
       </Flex>

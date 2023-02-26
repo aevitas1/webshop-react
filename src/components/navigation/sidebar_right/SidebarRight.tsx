@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Text, Flex, Icon, Box, Stack } from "@chakra-ui/react";
-import { CiUser, CiHeart, CiShoppingBasket, CiSearch } from "react-icons/ci";
+import { CiHeart, CiShoppingBasket, CiSearch } from "react-icons/ci";
 import ShoppingCart from "./ShoppingCart";
 import LoginDropDown from "./LoginDropdown";
+import LoginModal from "./LoginModal";
 
 const SidebarRight = () => {
   const [isHoveringCart, setIsHoveringCart] = useState(false);
@@ -20,7 +21,9 @@ const SidebarRight = () => {
             onMouseEnter={() => setIsHoveringLogin(true)}
             onMouseLeave={() => setIsHoveringLogin(false)}
           >
-            <Icon as={CiUser} w="2rem" h="2rem" fontWeight="bold" />
+            <Box display={{ base: "block", xl: "none" }}>
+              <LoginModal />
+            </Box>
             <Text
               fontSize="sm"
               fontWeight="semibold"

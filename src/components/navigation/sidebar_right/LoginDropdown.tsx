@@ -1,9 +1,10 @@
-import { Box, Text, Button } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
+import LoginModal from "./LoginModal";
 
 const LoginDropDown = () => {
   return (
     <>
-      <Box
+      <Flex
         p="6"
         bg="#faf9f8"
         boxShadow="0 2px 4px 0 rgba(34,34,34, .2)"
@@ -14,27 +15,19 @@ const LoginDropDown = () => {
         letterSpacing="wide"
         cursor="initial"
         display={{ base: "none", xl: "block" }}
+        direction="column"
       >
-        <Button
-          w="100%"
-          bg="#222"
-          _hover={{ backgroundColor: "#555" }}
-          borderRadius="0"
-          py="6"
-          px="8"
-        >
-          <Text color="#fff">Inloggen</Text>
-        </Button>
-        <Text fontSize="sm" fontWeight="semibold" pt="6">
+        <LoginModal />
+        <Text textStyle="p" cursor="pointer" pt="3">
           Mijn account
         </Text>
-        <Text fontSize="sm" fontWeight="semibold" pt="2">
+        <Text textStyle="p" cursor="pointer" pt="3">
           Membership info
         </Text>
-        <Text fontSize="xs" fontWeight="medium" color="#707070" pt="3">
+        <Text textStyle="helper" fontSize="xs" fontWeight="medium" pt="3">
           Nog geen member? Meld je hier aan!
         </Text>
-      </Box>
+      </Flex>
     </>
   );
 };

@@ -6,37 +6,19 @@ const SidebarLeft = () => {
   return (
     <>
       <Flex align="center" display={{ base: "none", xl: "flex" }}>
-        <Text
-          fontSize="sm"
-          fontWeight="semibold"
-          cursor="pointer"
-          mr="4"
-          letterSpacing="wide"
-        >
+        <Text textStyle="a" cursor="pointer" mr="4">
           Klantenservice
         </Text>
-        <Text
-          fontSize="sm"
-          fontWeight="semibold"
-          cursor="pointer"
-          mr="4"
-          letterSpacing="wide"
-        >
+        <Text textStyle="a" cursor="pointer" mr="4">
           Newsletter
         </Text>
-        <Text
-          fontSize="sm"
-          fontWeight="semibold"
-          cursor="pointer"
-          mr="4"
-          letterSpacing="wide"
-        >
+        <Text textStyle="a" cursor="pointer" mr="4">
           Zoek een winkel
         </Text>
         <AppLinks />
       </Flex>
       <Flex display={{ base: "flex", xl: "none" }} align="center">
-        <Icon as={SlMenu} h="1.2rem" w="1.2rem" color="#222" mr="5" />
+        <Icon as={SlMenu} height="1.2rem" width="1.2rem" mr="5" />
       </Flex>
     </>
   );
