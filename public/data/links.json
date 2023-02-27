@@ -1,0 +1,55 @@
+{
+  "footer": {
+    "shop": {
+      "header": "Shop",
+      "link": [
+        "Dames",
+        "Heren",
+        "Divided",
+        "Baby",
+        "Kinderen",
+        "H&M Home",
+        "Sport"
+      ]
+    },
+    "corporate_info": {
+      "header": "Bedrijfsinformatie",
+      "link": [
+        "Carrière",
+        "Over Ons",
+        "Duurzaamheid",
+        "Press",
+        "Investor Relations",
+        "Corporate Governance"
+      ]
+    },
+    "help": {
+      "header": "Help",
+      "link": [
+        "Klantenservice",
+        "Mijn Account",
+        "Store locator",
+        "Voorwaarden & Privacy",
+        "Contact",
+        "Giftcards",
+        "Oplichting melden",
+        "Kennisgeving inzake cookies"
+      ]
+    },
+    "sign_up": {
+      "header": "Meld je nu aan",
+      "text": "Word member en ontvang 10% korting + gratis standaard verzending op je volgende aankoop."
+    }
+  },
+  "menu": {
+    "Dames": [],
+    "Heren": [],
+    "Divided": [],
+    "Baby": [],
+    "Kinderen": [],
+    "Home": [],
+    "Beauty": [],
+    "Sport": [],
+    "Duurzaamheid": []
+  }
+}
