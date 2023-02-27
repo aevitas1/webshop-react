@@ -1,3 +1,4 @@
+const logoFont = "'Satisfy', cursive"
 const typography = {
     fontFamily: 'Montserrat',
     fontSize: 13,
@@ -32,6 +33,7 @@ const typography = {
         letterSpacing: "0.035rem",
         lineHeight: "1.25",
         textTransform: "uppercase",
+        paddingBottom: '1rem',
     },
     h3: {
         letterSpacing: '0.035rem',
@@ -63,7 +65,7 @@ const typography = {
         lineHeight: 1.84,
     },
     p: {
-        fontSize: '0.8125',
+        fontSize: '0.8125rem',
         letterSpacing: '0.035rem',
         lineHeight: '1rem',
         fontWeight: '500',
@@ -76,11 +78,39 @@ const typography = {
         color: '#707070',
     },
     link_footer: {
-        fontSize: '0.625rem',
+        fontSize: '0.6875rem',
         fontWeight: '500',
         letterSpacing: '0.035rem',
-        lineHeight: '2.2',
+        lineHeight: '3',
         cursor: 'pointer'
+    },
+    logo_header: {
+        fontFamily: logoFont,
+        color: '#E50010',
+        fontSize: '2.25rem',
+        textDecoration: 'none',
+        '@media screen and (max-width: 1280px)': {
+            fontSize: '1.25rem',
+        },
+    },
+    logo_footer: {
+        fontFamily: logoFont,
+        fontSize: '1.25rem',
+        textDecoration: 'none',
+    },
+    logo_header_middle: {
+        fontFamily: logoFont,
+        fontSize: '1rem',
+        paddingRight: '0.35rem',
+        '@media screen and (max-width: 1280px)': {
+            fontSize: "0.6rem",
+            paddingRight: "0.25rem",
+        },
+    },
+    logo_footer_middle: {
+        fontFamily: logoFont,
+        fontSize: "0.6rem",
+        paddingRight: "0.25rem",
     }
 }
 

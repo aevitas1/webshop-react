@@ -3,10 +3,8 @@ const MuiButton = {
         disableRipple: true,
         disableTouchRipple: true,
         style: {
-            fontSize: '1rem',
             textTransform: 'none',
             lineHeight: 1,
-            fontWeight: '600',
         }
     },
     variants: [
@@ -20,6 +18,8 @@ const MuiButton = {
                 backgroundColor: '#222',
                 color: '#fff',
                 padding: '1.5rem 2rem',
+                fontSize: '1rem',
+                fontWeight: '600',
                 '&:hover': {
                     backgroundColor: '#555',
                 },
@@ -36,6 +36,8 @@ const MuiButton = {
                 color: '#222',
                 padding: '1.5rem 2rem',
                 border: '1px solid #222',
+                fontSize: '1rem',
+                fontWeight: '600',
                 '&:hover': {
                     backgroundColor: 'transparent',
                 }
@@ -52,6 +54,8 @@ const MuiButton = {
                 width: 'fit-content',
                 padding: '0.75rem 1rem',
                 color: '#222',
+                fontSize: '1rem',
+                fontWeight: '600',
                 '&:hover': {
                     backgroundColor: 'transparent',
                 },
@@ -75,11 +79,34 @@ const MuiButton = {
                 width: 'fit-content',
                 padding: '0.5rem',
                 color: '#222',
+                fontSize: '1rem',
+                fontWeight: '600',
                 '&:hover': {
                     backgroundColor: '#e6e6e6',
                 },
                 '&:active': {
                     backgroundColor: '#e6e6e6',
+                }
+            },
+        },
+        {
+            props: {
+                variant: 'flat'
+            },
+            style: {
+                backgroundColor: 'transparent',
+                border: 'none',
+                borderRadius: '0',
+                width: 'fit-content',
+                padding: '0',
+                color: '#222',
+                fontSize: "0.6875rem",
+                fontWeight: "500",
+                '&:hover': {
+                    backgroundColor: 'transparent',
+                },
+                '&:active': {
+                    backgroundColor: 'transparent',
                 }
             },
         },

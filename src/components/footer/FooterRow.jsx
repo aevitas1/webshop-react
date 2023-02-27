@@ -1,5 +1,5 @@
 import { getLinks } from "../../hooks/getLinks";
-import { Typography, Link } from "@mui/material";
+import { Typography } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const FooterRow = () => {
@@ -48,7 +48,11 @@ const FooterRow = () => {
           </Typography>
           <Typography
             key={links.data.data.footer.sign_up.text}
-            variant="link_footer"
+            variant="p"
+            lineHeight="1.25rem"
+            width="100%"
+            fontSize="0.6875rem"
+            fontWeight="500"
           >
             {links.data.data.footer.sign_up.text}
           </Typography>
