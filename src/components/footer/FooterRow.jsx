@@ -5,17 +5,20 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import mediaQuery from "../../helpers/mediaQuery";
 import ArrowButton from "../customComponents/ArrowButton";
 
 const FooterRow = () => {
   const links = getLinks();
-  const matches = useMediaQuery("(max-width: 768px)");
 
   return links.status === "success" ? (
     <>
       {/* Desktop footer links  */}
-      <Grid2 container width="980px" display={matches ? "none" : "flex"}>
+      <Grid2
+        container
+        width="980px"
+        display={mediaQuery({ size: "xl" }) ? "none" : "flex"}
+      >
         {/* Shop  */}
         <Grid2 container direction="column" width="25%">
           <Typography variant="h2_footer">
@@ -73,7 +76,7 @@ const FooterRow = () => {
       <Grid2
         contain
         width="100vw"
-        display={matches ? "flex" : "none"}
+        display={mediaQuery({ size: "xl" }) ? "flex" : "none"}
         flexDirection="column"
       >
         {/* Shop  */}

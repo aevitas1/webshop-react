@@ -1,17 +1,20 @@
-import useMediaQuery from "@mui/material/useMediaQuery";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import SidebarLeft from "./sidebarLeft/SidebarLeft";
 import SidebarRight from "./sidebarRight/SidebarRight";
 import Logo from "../customComponents/Logo";
+import mediaQuery from "../../helpers/mediaQuery";
 
 const Navigation = () => {
-  const matches = useMediaQuery("(max-width: 1024px)");
   return (
     <>
       <Grid2
         container
         width="100%"
-        sx={matches ? { padding: "0.75rem 1rem" } : { padding: "0" }}
+        sx={
+          mediaQuery({ size: "xl" })
+            ? { padding: "0 1rem" }
+            : { padding: "1rem 2rem" }
+        }
       >
         <Grid2
           container
@@ -19,7 +22,7 @@ const Navigation = () => {
           height="67px"
           display="flex"
           sx={
-            matches
+            mediaQuery({ size: "xl" })
               ? { paddingLeft: "1rem" }
               : { justifyContent: "space-between" }
           }
