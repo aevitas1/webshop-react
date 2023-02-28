@@ -3,7 +3,6 @@ const MuiButton = {
         disableRipple: true,
         disableTouchRipple: true,
         style: {
-            textTransform: 'none',
             lineHeight: 1,
         }
     },
@@ -20,6 +19,7 @@ const MuiButton = {
                 padding: '1.5rem 2rem',
                 fontSize: '1rem',
                 fontWeight: '600',
+                textTransform: 'none',
                 '&:hover': {
                     backgroundColor: '#555',
                 },
@@ -38,6 +38,7 @@ const MuiButton = {
                 border: '1px solid #222',
                 fontSize: '1rem',
                 fontWeight: '600',
+                textTransform: 'none',
                 '&:hover': {
                     backgroundColor: 'transparent',
                 }
@@ -56,6 +57,7 @@ const MuiButton = {
                 color: '#222',
                 fontSize: '1rem',
                 fontWeight: '600',
+                textTransform: 'none',
                 '&:hover': {
                     backgroundColor: 'transparent',
                 },
@@ -81,6 +83,7 @@ const MuiButton = {
                 color: '#222',
                 fontSize: '1rem',
                 fontWeight: '600',
+                textTransform: 'none',
                 '&:hover': {
                     backgroundColor: '#e6e6e6',
                 },
@@ -102,11 +105,37 @@ const MuiButton = {
                 color: '#222',
                 fontSize: "0.6875rem",
                 fontWeight: "500",
+                textTransform: 'none',
                 '&:hover': {
                     backgroundColor: 'transparent',
                 },
                 '&:active': {
                     backgroundColor: 'transparent',
+                }
+            },
+        },
+        {
+            props: {
+                variant: 'arrow_button'
+            },
+            style: {
+                backgroundColor: 'transparent',
+                border: 'none',
+                borderRadius: '0',
+                padding: '0 26px 0 16px',
+                color: '#222',
+                fontSize: "0.8125rem",
+                fontWeight: "600",
+                letterSpacing: "0.035rem",
+                '&:hover': {
+                    backgroundColor: 'transparent',
+                },
+                '&:active': {
+                    backgroundColor: 'transparent',
+                },
+                'span svg': {
+                    fill: '#222',
+                    opacity: 1,
                 }
             },
         },

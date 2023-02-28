@@ -4,13 +4,20 @@ import typography from "./typography";
 import palette from "./palette";
 import MuiLink from "./MuiLink";
 import MuiContainer from './MuiContainer';
+import MuiAccordion from "./Accordion/MuiAccordion";
+import MuiAccordionDetails from "./Accordion/MuiAccordionDetails";
+import MuiAccordionSummary from "./Accordion/MuiAccordionSummary";
+
 
 export const Theme = createTheme({
     palette,
     components: {
         MuiButton,
         MuiLink,
-        MuiContainer
+        MuiContainer,
+        MuiAccordion,
+        MuiAccordionDetails,
+        MuiAccordionSummary
     },
     typography,
 });

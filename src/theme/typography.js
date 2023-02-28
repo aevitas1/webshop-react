@@ -29,7 +29,7 @@ const typography = {
     },
     h2_footer: {
         fontSize: "0.8125rem",
-        fontWeight: "700",
+        fontWeight: "600",
         letterSpacing: "0.035rem",
         lineHeight: "1.25",
         textTransform: "uppercase",
@@ -93,11 +93,6 @@ const typography = {
             fontSize: '1.25rem',
         },
     },
-    logo_footer: {
-        fontFamily: logoFont,
-        fontSize: '1.25rem',
-        textDecoration: 'none',
-    },
     logo_header_middle: {
         fontFamily: logoFont,
         fontSize: '1rem',
@@ -107,11 +102,18 @@ const typography = {
             paddingRight: "0.25rem",
         },
     },
+    logo_footer: {
+        fontFamily: logoFont,
+        fontSize: '1.25rem',
+        textDecoration: 'none',
+        color: 'black'
+    },
     logo_footer_middle: {
         fontFamily: logoFont,
         fontSize: "0.6rem",
         paddingRight: "0.25rem",
-    }
+        color: 'black',
+    },
 }
 
 export default typography;

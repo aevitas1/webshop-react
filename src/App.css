@@ -1,20 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
-body {
-  background-color: #faf9f8;
+/* Additional accordion styles  */
+.MuiPaper-root.MuiAccordion-root::before {
+  display: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-a::visited,
-p {
-  color: #222222;
-}
-
-.muted {
-  color: #707070;
+.MuiAccordionSummary-expandIconWrapper svg {
+  fill: #222;
 }
