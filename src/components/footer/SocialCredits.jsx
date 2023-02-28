@@ -10,15 +10,6 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 
 const SocialCredits = () => {
   const [show, setShow] = useState(false);
-  const iconStyle = {
-    width: "24px",
-    height: "24px",
-    fill: "black",
-    "&:hover": {
-      fill: "#707070",
-      cursor: "pointer",
-    },
-  };
 
   return (
     <>
@@ -27,13 +18,26 @@ const SocialCredits = () => {
           container
           display="flex"
           width="fit-content"
-          sx={{ gap: "1.25rem", paddingBottom: "1.5rem", paddingTop: "1rem" }}
+          sx={{
+            gap: "1.25rem",
+            paddingBottom: "1.5rem",
+            paddingTop: "1rem",
+            svg: {
+              width: "24px",
+              height: "24px",
+              fill: "black",
+              "&:hover": {
+                fill: "#707070",
+                cursor: "pointer",
+              },
+            },
+          }}
         >
-          <FacebookIcon sx={iconStyle} />
-          <TwitterIcon sx={iconStyle} />
-          <InstagramIcon sx={iconStyle} />
-          <YouTubeIcon sx={iconStyle} />
-          <PinterestIcon sx={iconStyle} />
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
+          <YouTubeIcon />
+          <PinterestIcon />
         </Grid2>
         <Grid2
           container

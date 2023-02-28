@@ -85,19 +85,22 @@ const typography = {
         cursor: 'pointer'
     },
     logo_header: {
+        display: 'inline-block',
         fontFamily: logoFont,
         color: '#E50010',
         fontSize: '2.25rem',
         textDecoration: 'none',
-        '@media screen and (max-width: 1280px)': {
+        transform: 'translateY(0.25rem)',
+        '@media screen and (max-width: 1024px)': {
             fontSize: '1.25rem',
+            transform: 'translateY(0)',
         },
     },
     logo_header_middle: {
         fontFamily: logoFont,
         fontSize: '1rem',
         paddingRight: '0.35rem',
-        '@media screen and (max-width: 1280px)': {
+        '@media screen and (max-width: 1024px)': {
             fontSize: "0.6rem",
             paddingRight: "0.25rem",
         },

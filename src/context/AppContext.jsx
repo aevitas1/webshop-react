@@ -1,19 +1,9 @@
-import { createContext, useState, useEffect } from "react";
-import axios from "axios";
+import { createContext } from "react";
 
 const AppContext = createContext();
 
-export const AppProvider = (props) => {
-  const [links, setLinks] = useState([]);
-
-  return (
-    <AppContext.Provider
-      value={{
-        links,
-        setLinks,
-      }}
-    >
-      {props.children}
-    </AppContext.Provider>
-  );
+export const AppProvider = ({ children }) => {
+  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
 };
+
+export default AppContext;
