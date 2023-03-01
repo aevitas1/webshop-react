@@ -15,6 +15,17 @@ const MuiLink = {
             }
         },
         {
+            props: { variant: 'helper' },
+            style: {
+                textDecoration: 'none',
+                fontSize: '0.6875rem',
+                letterSpacing: '0.035rem',
+                fontWeight: '600',
+                lineHeight: '1rem',
+                color: '#707070',
+            }
+        },
+        {
             props: { variant: 'infobar' },
             style: {
                 letterSpacing: '0.035rem',

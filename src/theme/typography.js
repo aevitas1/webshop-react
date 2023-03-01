@@ -60,8 +60,8 @@ const typography = {
     },
     h6: {
         letterSpacing: '0.035rem',
-        fontSize: '2.5rem',
-        fontWeight: 500,
+        fontSize: '1.25rem',
+        fontWeight: 800,
         lineHeight: 1.84,
     },
     p: {

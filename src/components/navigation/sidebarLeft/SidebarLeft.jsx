@@ -51,9 +51,10 @@ const SidebarLeft = () => {
             position="absolute"
             direction="column"
             display={open ? "flex" : "none"}
+            onMouseLeave={() => setOpen(!open)}
             sx={{
               boxShadow: "0 2px 4px 0 rgba(34,34,34, .2)",
-              top: "3.25rem",
+              top: "1.5rem",
               right: "-6.5rem",
               width: "max-content",
               ".MuiTypography-root": {
