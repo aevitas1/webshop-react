@@ -25,16 +25,20 @@ const LoginModal = () => {
   } = useContext(AppContext);
 
   const { loginInfo, setLoginInfo, setLoggedIn } = useContext(LoginContext);
-
   // Password & username checks
   const handleLogin = () => {
     setUserNameErr(false);
     setPasswordErr(false);
-
-    if (loginInfo.name !== "" && userName !== loginInfo.name) {
+    if (
+      (loginInfo.name !== "" && userName !== loginInfo.name) ||
+      loginInfo.name === ""
+    ) {
       setUserNameErr(true);
     }
-    if (loginInfo.password !== "" && password !== loginInfo.password) {
+    if (
+      (loginInfo.password !== "" && password !== loginInfo.password) ||
+      loginInfo.password === ""
+    ) {
       setPasswordErr(true);
     }
     if (
