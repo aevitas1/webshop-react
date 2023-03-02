@@ -7,6 +7,8 @@ import MuiContainer from './MuiContainer';
 import MuiAccordion from "./Accordion/MuiAccordion";
 import MuiAccordionDetails from "./Accordion/MuiAccordionDetails";
 import MuiAccordionSummary from "./Accordion/MuiAccordionSummary";
+import MuiTextField from "./MuiTextField";
+import MuiModal from "./MuiModal";
 
 
 export const Theme = createTheme({
@@ -17,7 +19,9 @@ export const Theme = createTheme({
         MuiContainer,
         MuiAccordion,
         MuiAccordionDetails,
-        MuiAccordionSummary
+        MuiAccordionSummary,
+        MuiTextField,
+        MuiModal
     },
     typography,
 });

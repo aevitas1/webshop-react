@@ -116,6 +116,50 @@ const MuiButton = {
         },
         {
             props: {
+                variant: 'flat_underline'
+            },
+            style: {
+                backgroundColor: 'transparent',
+                textDecoration: 'underline',
+                border: 'none',
+                borderRadius: '0',
+                width: 'fit-content',
+                padding: '0',
+                color: '#222',
+                fontSize: "0.8rem",
+                fontWeight: "500",
+                textTransform: 'none',
+                '&:hover': {
+                    backgroundColor: 'transparent',
+                },
+                '&:active': {
+                    backgroundColor: 'transparent',
+                }
+            },
+        },
+        {
+            props: { variant: 'helper' },
+            style: {
+                backgroundColor: 'transparent',
+                textTransform: 'none',
+                border: 'none',
+                borderRadius: '0',
+                textDecoration: 'none',
+                padding: '0',
+                width: 'fit-content',
+                fontSize: '0.6875rem',
+                fontWeight: '500',
+                color: '#707070',
+                '&:hover': {
+                    backgroundColor: 'transparent',
+                },
+                '&:active': {
+                    backgroundColor: 'transparent',
+                }
+            }
+        },
+        {
+            props: {
                 variant: 'arrow_button'
             },
             style: {

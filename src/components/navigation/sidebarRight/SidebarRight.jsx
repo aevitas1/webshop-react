@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Box, useMediaQuery } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
@@ -6,11 +6,14 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import SearchIcon from "@mui/icons-material/Search";
 import LoginDropdown from "./LoginDropdown";
+import LoginContext from "../../../context/LoginContext";
 
 import { Link } from "@mui/material";
 const SidebarRight = () => {
   const match = useMediaQuery("@media screen and (max-width: 1024px)");
   const [hover, setHover] = useState(false);
+  const { loggedIn } = useContext(LoginContext);
+
   return (
     <>
       <Grid2
@@ -53,7 +56,7 @@ const SidebarRight = () => {
           >
             <PersonIcon />
             <span style={match ? { display: "none" } : { display: "block" }}>
-              Inloggen
+              {loggedIn ? "Mijn Account" : "Inloggen"}
             </span>
           </Link>
           <Grid2 sx={hover ? { display: "flex" } : { display: "none" }}>

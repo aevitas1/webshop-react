@@ -1,10 +1,16 @@
+import { useContext } from "react";
+import AppContext from "../../../context/AppContext";
+import LoginContext from "../../../context/LoginContext";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Link, Button } from "@mui/material";
-import LoginModal from "./LoginModal";
-import { useState } from "react";
 
 const LoginDropdown = ({ hover, setHover }) => {
-  const [open, setOpen] = useState(false);
+  const { openLoginModal, setOpenLoginModal, setOpenAccountModal } =
+    useContext(AppContext);
+
+  const { setLoggedIn, loggedIn, loginInfo, setLoginInfo } =
+    useContext(LoginContext);
+
   return (
     <>
       <Grid2
@@ -20,19 +26,61 @@ const LoginDropdown = ({ hover, setHover }) => {
           top: "27px",
         }}
       >
-        <Button variant="primary" onClick={() => setOpen(!open)}>
-          Inloggen
-        </Button>
-        <LoginModal open={open} setOpen={setOpen} />
-        <Link variant="headerTop" sx={{ paddingTop: "1.5rem" }}>
+        {loggedIn ? (
+          ""
+        ) : (
+          <>
+            <Button
+              variant="primary"
+              onClick={() => {
+                setOpenLoginModal(!openLoginModal);
+              }}
+            >
+              Inloggen
+            </Button>
+          </>
+        )}
+
+        <Link
+          variant="headerTop"
+          sx={loggedIn ? {} : { paddingTop: "1.5rem" }}
+          onClick={() => {
+            loggedIn ? "" : setOpenLoginModal(true);
+          }}
+        >
           Mijn account
         </Link>
         <Link variant="headerTop" sx={{ paddingTop: "0.5rem" }}>
           Membership info
         </Link>
-        <Link variant="helper" sx={{ paddingTop: "0.5rem" }}>
-          Nog geen member? Meld je hier aan!
-        </Link>
+        {loggedIn ? (
+          <Button
+            variant="helper"
+            onClick={() => {
+              setLoggedIn(false);
+              setLoginInfo({
+                ...loginInfo,
+                remember: false,
+                hasloggedin: false,
+              });
+            }}
+            sx={{
+              fontWeight: "600",
+              minWidth: "fit-content",
+            }}
+          >
+            Uitloggen
+          </Button>
+        ) : (
+          <Button
+            variant="helper"
+            onClick={() => {
+              setOpenAccountModal(true);
+            }}
+          >
+            Nog geen member? Meld je hier aan!
+          </Button>
+        )}
       </Grid2>
     </>
   );

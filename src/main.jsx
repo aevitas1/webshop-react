@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { AppProvider } from "./context/AppContext";
+import { LoginProvider } from "./context/LoginContext";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 import "@fontsource/montserrat";
@@ -26,7 +27,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <CssBaseline />
         <AppProvider>
           <QueryClientProvider client={queryClient}>
-            <App />
+            <LoginProvider>
+              <App />
+            </LoginProvider>
           </QueryClientProvider>
         </AppProvider>
       </ThemeProvider>
