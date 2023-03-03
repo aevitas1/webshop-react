@@ -9,7 +9,26 @@ const MuiLink = {
             props: { variant: 'headerTop' },
             style: {
                 textDecoration: 'none',
+                fontSize: '0.8125rem',
+                fontWeight: '600',
+                letterSpacing: '0.035rem',
+            }
+        },
+        {
+            props: { variant: 'headerTopLinks' },
+            style: {
+                textDecoration: 'none',
                 fontSize: '0.6875rem',
+                fontWeight: '600',
+                letterSpacing: '0.035rem',
+                lineHeight: '1.25rem'
+            }
+        },
+        {
+            props: { variant: 'mainMenuItems' },
+            style: {
+                textDecoration: 'none',
+                fontSize: '0.9rem',
                 fontWeight: '600',
                 letterSpacing: '0.035rem',
             }

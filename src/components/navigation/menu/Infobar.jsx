@@ -11,7 +11,7 @@ const Infobar = () => {
         <Grid2
           container
           width="960px"
-          justifyContent={mobile ? "center" : "space-between"}
+          justifyContent={mobile ? "center" : "space-around"}
         >
           <Link variant="infobar">Free shipping over $40</Link>
           <Link variant="infobar" sx={mobile ? { display: "none" } : {}}>

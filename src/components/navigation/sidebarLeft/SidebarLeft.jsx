@@ -18,13 +18,13 @@ const SidebarLeft = () => {
         position="relative"
         sx={match ? { display: "none" } : { gap: "1rem" }}
       >
-        <Link href="javascript:void(0)" variant="headerTop">
+        <Link href="#" variant="headerTop">
           Customer Service
         </Link>
-        <Link href="javascript:void(0)" variant="headerTop">
+        <Link href="#" variant="headerTop">
           Student Discount
         </Link>
-        <Link href="javascript:void(0)" variant="headerTop">
+        <Link href="#" variant="headerTop">
           Find a store
         </Link>
         <Grid2
@@ -72,13 +72,13 @@ const SidebarLeft = () => {
               },
             }}
           >
-            <Link href="javascript:void(0)" variant="headerTop">
+            <Link href="#" variant="headerTop">
               Newsletter
             </Link>
-            <Link href="javascript:void(0)" variant="headerTop">
+            <Link href="#" variant="headerTop">
               M&H Android App
             </Link>
-            <Link href="javascript:void(0)" variant="headerTop">
+            <Link href="#" variant="headerTop">
               M&H Iphone App
             </Link>
           </Grid2>

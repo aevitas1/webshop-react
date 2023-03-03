@@ -4,6 +4,7 @@ import SidebarLeft from "./sidebarLeft/SidebarLeft";
 import SidebarRight from "./sidebarRight/SidebarRight";
 import Logo from "../customComponents/Logo";
 import Infobar from "./menu/Infobar";
+import MainMenu from "./menu/MainMenu";
 
 const Navigation = () => {
   const match = useMediaQuery("@media screen and (max-width: 1024px)");
@@ -30,6 +31,7 @@ const Navigation = () => {
           <Logo variant="logo_header" />
           <SidebarRight />
         </Grid2>
+        <MainMenu />
         <Infobar />
       </Grid2>
     </>

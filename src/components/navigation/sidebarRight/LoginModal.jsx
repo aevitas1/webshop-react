@@ -103,22 +103,22 @@ const LoginModal = () => {
           </Typography>
           <TextField
             fullWidth
-            label={"Naam"}
+            label={"Name"}
             value={userName}
             onChange={(e) => {
               setUserName(e.target.value);
             }}
             id="name_field"
-            helperText={userNameErr ? "Verkeerde naam ingevoerd" : ""}
+            helperText={userNameErr ? "Your name is incorrect" : ""}
             variant="outlined"
             className="login"
             required
           />
           <TextField
             fullWidth
-            label={"Wachtwoord"}
+            label={"Password"}
             value={password}
-            helperText={passwordErr ? "Uw wachtwoord is verkeerd" : ""}
+            helperText={passwordErr ? "Your password is incorrect" : ""}
             onChange={(e) => {
               setPassword(e.target.value);
             }}
@@ -139,7 +139,7 @@ const LoginModal = () => {
                     },
                   }}
                 >
-                  {showPassword ? "Verbergen" : "Tonen"}
+                  {showPassword ? "HIDE" : "SHOW"}
                 </InputAdornment>
               ),
             }}
@@ -156,11 +156,11 @@ const LoginModal = () => {
             }}
           >
             {userNameErr && passwordErr
-              ? `Weet u uw login informatie niet meer? Druk op ''Wachtwoord vergeten?'`
+              ? `Forgot login information? Press "forgot password?"`
               : userNameErr
-              ? `Weet u uw naam niet meer? Druk op ''Wachtwoord vergeten?'`
+              ? `Forgot login name? Press "forgot password?"`
               : passwordErr
-              ? `Weet u uw wachtwoord niet meer? Druk op 'Wachtwoord vergeten?'`
+              ? `Forgot password? Press "forgot password?"`
               : ""}
           </Typography>
           <Grid2 display="flex" justifyContent="space-between">
@@ -176,7 +176,7 @@ const LoginModal = () => {
                   }}
                 />
               }
-              label="Gegevens onthouden"
+              label="Remember me"
               sx={{
                 ".MuiTypography-root": {
                   fontSize: "0.8rem",
@@ -185,7 +185,7 @@ const LoginModal = () => {
               }}
             />
             <Button variant="flat_underline" onClick={handleForgottenPassword}>
-              Wachtwoord vergeten?
+              Forgot password?
             </Button>
           </Grid2>
           <Button
@@ -193,7 +193,7 @@ const LoginModal = () => {
             sx={{ marginTop: "2.5rem" }}
             onClick={handleLogin}
           >
-            Inloggen
+            Sign in
           </Button>
           <Button
             variant="secondary"
@@ -203,13 +203,13 @@ const LoginModal = () => {
               setOpenAccountModal(!openAccountModal);
             }}
           >
-            Lid worden
+            Become a member
           </Button>
           <Link
             variant="underline"
             sx={{ justifyContent: "center", width: "100%", margin: "1rem 0" }}
           >
-            Membership info
+            Loyalty Program Info
           </Link>
         </Box>
       </Modal>

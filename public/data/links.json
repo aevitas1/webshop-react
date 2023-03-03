@@ -48,95 +48,686 @@
     }
   },
 
-  "menu": {
-    "Women": [
-      {
-        "header": "New Arrivals",
-        "link": [
-          "View All",
-          "Clothes",
-          "Shoes & Accessories",
-          "Beauty",
-          "Underwear & Loungewear"
-        ]
-      },
-      {
-        "header": "Trending Now",
-        "link": [
-          "New season edit",
-          "Effortless tailoring",
-          "H&M Edition",
-          "Sun-kissed styles",
-          "Festival",
-          "The Wedding Shop",
-          "H&M Williamsburg: No2_MOVE"
-        ]
-      },
-      {
-        "header": "Offers",
-        "link": [
-          "Student Discount",
-          "Sale up to 50%",
-          "Member Prices from $4.99"
-        ]
-      },
-      {
-        "header": "Shop by Product",
-        "link": [
-          "View All",
-          " Plus Sizes",
-          "Dresses",
-          "Tops",
-          "Shirts & Blouses",
-          "Pants",
-          "Cardigans & Sweaters",
-          "Jackets & Coats",
-          "Blazers & Vests",
-          "Jeans",
-          "Overalls & Jumpsuits",
-          "Skirts",
-          "Shoes",
-          "Accessories",
-          "Hoodies & Sweatshirts",
-          "Basics",
-          "Lingerie",
-          "Loungewear",
-          "Sleepwear",
-          " Socks & Tights",
-          "Sportswear",
-          "Swimwear & Beachwear",
-          "Shorts",
-          "Maternity Wear",
-          "Premium Selection",
-          "Beauty",
-          " Care products"
-        ]
-      },
-      {
-        "header": "Gifting",
-        "link": ["Gift Cards"]
-      },
-      {
-        "header": "Sustainability",
-        "link": ["H&M Take Care", "Learn More"]
-      },
-      {
-        "header": "Magazine",
-        "link": ["Magazine"]
-      },
-      {
-        "header": "Shop by Occasion",
-        "link": ["Wedding", "Party Wear", "Office Wear"]
-      }
-    ],
-    "Men": {},
-    "Divided": {},
-    "Baby": {},
-    "Kids": {},
-    "M&H Home": {},
-    "Beauty": {},
-    "Sport": {},
-    "Sale": {},
-    "Sustainability": {}
-  }
+  "menu": [
+    {
+      "menu_item": "Women",
+      "links": [
+        {
+          "header": "New Arrivals",
+          "link": [
+            "View All",
+            "Clothes",
+            "Shoes & Accessories",
+            "Beauty",
+            "Underwear & Loungewear"
+          ]
+        },
+        {
+          "header": "Trending Now",
+          "link": [
+            "New season edit",
+            "Effortless tailoring",
+            "M&H Edition",
+            "Sun-kissed styles",
+            "Festival",
+            "The Wedding Shop",
+            "M&H Williamsburg: No2_MOVE"
+          ]
+        },
+        {
+          "header": "Offers",
+          "link": [
+            "Student Discount",
+            "Sale up to 50%",
+            "Member Prices from $4.99"
+          ]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View All",
+            " Plus Sizes",
+            "Dresses",
+            "Tops",
+            "Shirts & Blouses",
+            "Pants",
+            "Cardigans & Sweaters",
+            "Jackets & Coats",
+            "Blazers & Vests",
+            "Jeans",
+            "Overalls & Jumpsuits",
+            "Skirts",
+            "Shoes",
+            "Accessories",
+            "Hoodies & Sweatshirts",
+            "Basics",
+            "Lingerie",
+            "Loungewear",
+            "Sleepwear",
+            " Socks & Tights",
+            "Sportswear",
+            "Swimwear & Beachwear",
+            "Shorts",
+            "Maternity Wear",
+            "Premium Selection",
+            "Beauty",
+            " Care products"
+          ]
+        },
+        {
+          "header": "Gifting",
+          "link": ["Gift Cards"]
+        },
+        {
+          "header": "Sustainability",
+          "link": ["M&H Take Care", "Learn More"]
+        },
+        {
+          "header": "Magazine",
+          "link": ["Magazine"]
+        },
+        {
+          "header": "Shop by Occasion",
+          "link": ["Wedding", "Party Wear", "Office Wear"]
+        }
+      ]
+    },
+    {
+      "menu_item": "Men",
+      "links": [
+        {
+          "header": "New Arrivals",
+          "link": [
+            "View All",
+            "Clothes",
+            " Shoes and Accessories",
+            "Sportswear"
+          ]
+        },
+        {
+          "header": "The essentials",
+          "link": ["About", " Core collection"]
+        },
+        {
+          "header": " Spring lookbook",
+          "link": ["Casual looks", " Smart looks", "Street looks"]
+        },
+        {
+          "header": "Offers & Deals",
+          "link": [
+            "Sale up to 50% off",
+            "Member Prices from $10.99",
+            "Socks : B2G1",
+            "Student Discount"
+          ]
+        },
+        {
+          "header": "Trending Now",
+          "link": [
+            "Keith Haring X HM",
+            "Top sellers from $6.99",
+            "Blank Staples",
+            "The Graphics Shop"
+          ]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View All",
+            "T-shirts & Tanks",
+            "Pants",
+            "Hoodies & Sweatshirts",
+            "Shirts",
+            "Suits & Blazers",
+            "Jeans",
+            "Shorts",
+            "Swimwear",
+            "Sportswear",
+            "Basics",
+            "Underwear",
+            "Socks",
+            "Accessories",
+            "Shoes",
+            "Sleepwear & Loungewear",
+            "Premium Selection",
+            "Cardigans & Sweaters",
+            "Jackets & Coats",
+            "Care products",
+            "Dog clothes & Accessories",
+            "Knitwear"
+          ]
+        },
+        {
+          "header": "Sustainability",
+          "link": ["M&H Take Care", "Learn More", "Gifting", "Gift Cards"]
+        }
+      ]
+    },
+    {
+      "menu_item": "Divided",
+      "links": [
+        {
+          "header": "New Arrivals",
+          "link": ["Clothes", "Shoes & Accessories"]
+        },
+        {
+          "header": "Offers & Deals",
+          "link": [
+            "Student Discount",
+            "Member Prices from $4.99",
+            "Sale up to 50% off"
+          ]
+        },
+        {
+          "header": "Trending Now",
+          "link": [
+            "Festival",
+            "Spring looks",
+            "Music, Movies & Logos",
+            "The Unisex Shop"
+          ]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View All",
+            "Tops",
+            "Dresses",
+            "Pants & Leggings",
+            "Outerwear",
+            "Cardigans & Sweaters",
+            "Jeans",
+            "Accessories",
+            "Hoodies & Sweatshirts",
+            "Shirts & Blouses",
+            "Plus Sizes",
+            "Skirts",
+            "Divided - Basics",
+            "Jumpsuits & Rompers",
+            "Underwear & Nightwear",
+            "Shoes",
+            "Swimwear",
+            "Shorts",
+            "Care products"
+          ]
+        },
+        {
+          "header": "Gifting",
+          "link": ["Gift Cards"]
+        },
+        {
+          "header": "Sustainability",
+          "link": ["M&H Take Care", "Learn More"]
+        }
+      ]
+    },
+    {
+      "menu_item": "Baby",
+      "links": [
+        {
+          "header": "Offers & Deals",
+          "link": ["Member Prices from $11.99", "Sale up to 50% off"]
+        },
+        {
+          "header": "Popular Now",
+          "link": [
+            "Gifts for the New Baby",
+            "Easter Sweetness",
+            "Disney Clothes for Baby",
+            "Newborn and Maternity Shop",
+            "Basics & Multipacks from $6.99",
+            "The Character Shop from $6.99"
+          ]
+        },
+        {
+          "header": "Newborn",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Outerwear",
+            "Accessories",
+            "Shoes"
+          ]
+        },
+        {
+          "header": " Baby Girl",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Outerwear",
+            "Accessories",
+            "Shoes"
+          ]
+        },
+        {
+          "header": "Baby Boy",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Outerwear",
+            "Accessories",
+            "Shoes"
+          ]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Outerwear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
+        },
+        {
+          "header": " Sustainability",
+          "link": ["M&H Take Care", "Learn More"]
+        }
+      ]
+    },
+    {
+      "menu_item": "Kids",
+      "links": [
+        {
+          "header": "Offers & Deals",
+          "link": [" Member Prices from $11.99", " Sale up to 50% off"]
+        },
+        {
+          "header": "Popular Now",
+          "link": [
+            "Disney from $7.99",
+            "Warmer weather",
+            "Online Exclusives",
+            "The Character Shop from $7.99",
+            "Basics & Multipacks from $4.99",
+            "Easter Sweetness"
+          ]
+        },
+        {
+          "header": " Girls (2-8Y)",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Outerwear",
+            "Activewear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
+        },
+        {
+          "header": "Boys (2-8Y)",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Swimwear",
+            "Outerwear",
+            "Activewear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
+        },
+        {
+          "header": "Girls (9-14Y)",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Swimwear",
+            "Outerwear",
+            "Activewear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
+        },
+        {
+          "header": "Boys (9-14Y)",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Swimwear",
+            "Outerwear",
+            "Activewear",
+            "Accessories",
+            "Shoes",
+            "Costumes",
+            "Party Occasion"
+          ]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Swimwear",
+            "Outerwear",
+            "Activewear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
+        },
+        {
+          "header": "Kids room",
+          "link": ["View All"]
+        },
+        {
+          "header": "Sustainability",
+          "link": ["M&H Take Care", "Learn More"]
+        }
+      ]
+    },
+    {
+      "menu_item": "M&H Home",
+      "links": [
+        {
+          "header": "Offers & Deals",
+          "link": [
+            "Sale up to 50% off",
+            "Member Prices from $2.99",
+            "Student Discount"
+          ]
+        },
+        {
+          "header": "New Arrivals",
+          "link": ["New Products"]
+        },
+        {
+          "header": "Shop by Room",
+          "link": [
+            "Hallway",
+            "Bedroom",
+            "Living Room",
+            "Nursery",
+            "Kids' Room",
+            "Bathroom",
+            "Kitchen",
+            "Balcony & Outdoor"
+          ]
+        },
+        {
+          "header": "Trending Now",
+          "link": ["The Bestsellers Shop", "Vases from $4.99"]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View All",
+            "Homewear",
+            "Books",
+            "Room Fragrance",
+            "Decorations",
+            "Bedding",
+            "Throw Pillows & Seat Cushions",
+            "Dinnerware & Tableware",
+            "Home Storage & Organizing",
+            "Bath & Shower",
+            "Rugs",
+            "Curtains",
+            "Cookware & Bakeware",
+            "Blankets",
+            "Toys",
+            "Gift wrapping"
+          ]
+        },
+        {
+          "header": "Sustainability",
+          "link": ["Learn More"]
+        },
+        {
+          "header": "Gifting",
+          "link": ["Gift Cards"]
+        }
+      ]
+    },
+    {
+      "menu_item": "Beauty",
+      "links": [
+        {
+          "header": "New Arrivals",
+          "link": ["View All"]
+        },
+        {
+          "header": "Beauty Products",
+          "link": [
+            "View All",
+            "Makeup",
+            "Nails",
+            "Skin Care",
+            "Bath & Body",
+            "Hair Care",
+            "Fragrance",
+            "Makeup Bags & Cases",
+            "Brushes & Tools",
+            "Mini Size"
+          ]
+        },
+        {
+          "header": "Gift Cards",
+          "link": ["Gift Cards", "Gift guide"]
+        },
+        {
+          "header": "Magazine",
+          "link": ["Magazine"]
+        }
+      ]
+    },
+    {
+      "menu_item": "Sport",
+      "links": [
+        {
+          "header": "Offers & Deals",
+          "link": ["Sale up to 70% off", "Student Discount"]
+        },
+        {
+          "header": "New arrivals",
+          "link": [" View all", " Women", " Men", " Kids"]
+        },
+        {
+          "header": "Women",
+          "link": [
+            "View All",
+            "Clothing",
+            "Active Swimwear",
+            "Outerwear",
+            "Accessories & Equipment",
+            "Maternity"
+          ]
+        },
+        {
+          "header": "Men",
+          "link": [
+            "View All",
+            "Clothing",
+            "Outerwear",
+            "Accessories & Equipment"
+          ]
+        },
+        {
+          "header": "Kids",
+          "link": ["View All", "Girls", "Boys", "Sports Accessories"]
+        },
+        {
+          "header": "Gifting",
+          "link": ["Gift Cards"]
+        },
+        {
+          "header": "Inspiration & Guides",
+          "link": [
+            "Tights: Your Movement Buddies",
+            "M&H Move Empower Collection",
+            "SoftMove™ Tights and Bras",
+            "New arrivals: M&H Move",
+            "Action-Ready T-Shirts",
+            "Outdoor training women",
+            "Outdoor training men"
+          ]
+        }
+      ]
+    },
+    {
+      "menu_item": "Sale",
+      "links": [
+        {
+          "header": " Women",
+          "link": [
+            "View All",
+            "Cardigans & Sweaters",
+            "Dresses",
+            "Tops",
+            "Basics",
+            "Shirts & Blouses",
+            "Blazers",
+            "Jackets & Coats",
+            "Pants",
+            "Jeans",
+            "Shorts",
+            "Skirts",
+            "Jumpsuits",
+            "Shoes",
+            "Accessories",
+            "Swimwear",
+            "Lingerie",
+            "Sleepwear & Loungewear",
+            "Socks & Tights",
+            "Sportswear",
+            "Maternity Wear",
+            "Petite Sizing",
+            "Plus Sizes",
+            "Beauty",
+            "Sweatshirts & Hoodies",
+            "Premium Selection"
+          ]
+        },
+        {
+          "header": "Divided",
+          "link": [
+            "View All",
+            "Outerwear",
+            "Cardigans & Sweaters",
+            "Hoodies & Sweatshirts",
+            "Jeans",
+            "Tops",
+            "Pants & Leggings",
+            "Basics",
+            "Dresses",
+            "Shirts & Blouses",
+            "Jumpsuits & Rompers",
+            "Skirts",
+            "Underwear & Nightwear",
+            "Shoes",
+            "Accessories",
+            "Swimwear",
+            "Shorts"
+          ]
+        },
+        {
+          "header": "Men",
+          "link": [
+            "View all",
+            "Hoodies & Sweatshirts",
+            "Pants",
+            "Jackets & Coats",
+            "Shirts",
+            "Cardigans & Sweaters",
+            "T-shirts & Tanks",
+            "Jeans",
+            "Shorts",
+            "Accessories",
+            "Shoes",
+            "Underwear",
+            "Sleepwear & Loungewear",
+            "Socks",
+            "Sportswear",
+            "Swimwear",
+            "Basics",
+            "Blazers & Suits",
+            "Premium Selection",
+            "Extended Sizes"
+          ]
+        },
+        {
+          "header": "Baby",
+          "link": ["Newborn", "Baby Girl", "Baby Boy", "View All Products"]
+        },
+        {
+          "header": "Kids",
+          "link": [
+            "Girls 2-8Y",
+            "Boys 2-8Y",
+            "Girls 9-14Y",
+            "Boys 9-14Y",
+            "View All Products"
+          ]
+        },
+        {
+          "header": "Sport",
+          "link": ["View all", "Women", "Men", "Kids"]
+        },
+        {
+          "header": "M&H Home",
+          "link": [
+            "View All",
+            "Bedroom",
+            "Living room",
+            "Kids' Room",
+            "Kitchen",
+            "Bathroom",
+            "Outdoor",
+            "Decorations",
+            "Pillows",
+            "Bed Linen",
+            "Storage",
+            "Carpets",
+            "Blankets",
+            "Homewear",
+            "Curtains",
+            "Gift wrapping"
+          ]
+        }
+      ]
+    },
+    {
+      "menu_item": "Sustainability",
+      "links": [
+        {
+          "header": "Our work",
+          "link": [
+            "The latest",
+            "Let's change",
+            "Let’s innovate",
+            "Let's be fair",
+            "Let's be for all",
+            "Let's be transparent",
+            "Let's clean up",
+            "Let’s close the loop",
+            "Praise from others "
+          ]
+        },
+        {
+          "header": "M&H Take Care",
+          "link": ["Repair, remake & refresh"]
+        },
+        {
+          "header": "Our commitment",
+          "link": [
+            "M&H Group Sustainability Strategy",
+            "M&H Group Sustainability Report",
+            "M&H Foundation"
+          ]
+        }
+      ]
+    }
+  ]
 }

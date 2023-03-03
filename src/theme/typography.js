@@ -77,6 +77,13 @@ const typography = {
         lineHeight: '1rem',
         color: '#707070',
     },
+    submenu_link_header: {
+        textDecoration: 'none',
+        fontSize: '0.6875rem',
+        fontWeight: '800',
+        letterSpacing: '0.035rem',
+        width: '100%'
+    },
     link_footer: {
         fontSize: '0.6875rem',
         fontWeight: '500',
