@@ -80,7 +80,7 @@ const LoginModal = () => {
             }}
           >
             <Typography variant="h6" component="h2">
-              Inloggen
+              Sign in
             </Typography>
             <CloseIcon
               onClick={() => {
@@ -98,8 +98,8 @@ const LoginModal = () => {
               textAlign: "center",
             }}
           >
-            Word member: mis geen deals, aanbiedingen, kortingen en
-            bonusvouchers.
+            Become a member -- you'll enjoy exclusive deals, offers, invites and
+            rewards.
           </Typography>
           <TextField
             fullWidth

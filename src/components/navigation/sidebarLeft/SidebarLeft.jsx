@@ -18,9 +18,15 @@ const SidebarLeft = () => {
         position="relative"
         sx={match ? { display: "none" } : { gap: "1rem" }}
       >
-        <Link variant="headerTop">Klantenservice</Link>
-        <Link variant="headerTop">Newsletter</Link>
-        <Link variant="headerTop">Zoek een winkel</Link>
+        <Link href="javascript:void(0)" variant="headerTop">
+          Customer Service
+        </Link>
+        <Link href="javascript:void(0)" variant="headerTop">
+          Student Discount
+        </Link>
+        <Link href="javascript:void(0)" variant="headerTop">
+          Find a store
+        </Link>
         <Grid2
           container
           onClick={() => {
@@ -66,8 +72,15 @@ const SidebarLeft = () => {
               },
             }}
           >
-            <Link variant="headerTop">M&H Android App</Link>
-            <Link variant="headerTop">M&H Iphone App</Link>
+            <Link href="javascript:void(0)" variant="headerTop">
+              Newsletter
+            </Link>
+            <Link href="javascript:void(0)" variant="headerTop">
+              M&H Android App
+            </Link>
+            <Link href="javascript:void(0)" variant="headerTop">
+              M&H Iphone App
+            </Link>
           </Grid2>
         </Grid2>
       </Grid2>

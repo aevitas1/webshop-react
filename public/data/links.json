@@ -3,21 +3,24 @@
     "shop": {
       "header": "Shop",
       "link": [
-        "Dames",
-        "Heren",
+        "Women",
         "Divided",
+        "Men",
         "Baby",
-        "Kinderen",
-        "H&M Home",
-        "Sport"
+        "Kids",
+        "M&H Home",
+        "Beauty",
+        "Student Discount",
+        "Sport",
+        "Gift Card"
       ]
     },
     "corporate_info": {
-      "header": "Bedrijfsinformatie",
+      "header": "Corporate Info",
       "link": [
-        "Carrière",
-        "Over Ons",
-        "Duurzaamheid",
+        "Carreer at M&H",
+        "About us",
+        "Sustainability",
         "Press",
         "Investor Relations",
         "Corporate Governance"
@@ -26,30 +29,114 @@
     "help": {
       "header": "Help",
       "link": [
-        "Klantenservice",
-        "Mijn Account",
-        "Store locator",
-        "Voorwaarden & Privacy",
+        "Customer Service",
+        "My Account",
+        "Find a store",
+        "Legal & Privacy",
         "Contact",
-        "Giftcards",
-        "Oplichting melden",
-        "Kennisgeving inzake cookies"
+        "Gift Card Terms and Conditions",
+        "CA Supply Chain Act",
+        "California, Calorado and Virginia Privacy Act",
+        "Our Commitment to Accessibility",
+        "Report a scam",
+        "Cookie Notice"
       ]
     },
     "sign_up": {
-      "header": "Meld je nu aan",
-      "text": "Word member en ontvang 10% korting + gratis standaard verzending op je volgende aankoop."
+      "header": "Become a member",
+      "text": "Join now and get 10% off your next purchase!"
     }
   },
+
   "menu": {
-    "Dames": [],
-    "Heren": [],
-    "Divided": [],
-    "Baby": [],
-    "Kinderen": [],
-    "Home": [],
-    "Beauty": [],
-    "Sport": [],
-    "Duurzaamheid": []
+    "Women": [
+      {
+        "header": "New Arrivals",
+        "link": [
+          "View All",
+          "Clothes",
+          "Shoes & Accessories",
+          "Beauty",
+          "Underwear & Loungewear"
+        ]
+      },
+      {
+        "header": "Trending Now",
+        "link": [
+          "New season edit",
+          "Effortless tailoring",
+          "H&M Edition",
+          "Sun-kissed styles",
+          "Festival",
+          "The Wedding Shop",
+          "H&M Williamsburg: No2_MOVE"
+        ]
+      },
+      {
+        "header": "Offers",
+        "link": [
+          "Student Discount",
+          "Sale up to 50%",
+          "Member Prices from $4.99"
+        ]
+      },
+      {
+        "header": "Shop by Product",
+        "link": [
+          "View All",
+          " Plus Sizes",
+          "Dresses",
+          "Tops",
+          "Shirts & Blouses",
+          "Pants",
+          "Cardigans & Sweaters",
+          "Jackets & Coats",
+          "Blazers & Vests",
+          "Jeans",
+          "Overalls & Jumpsuits",
+          "Skirts",
+          "Shoes",
+          "Accessories",
+          "Hoodies & Sweatshirts",
+          "Basics",
+          "Lingerie",
+          "Loungewear",
+          "Sleepwear",
+          " Socks & Tights",
+          "Sportswear",
+          "Swimwear & Beachwear",
+          "Shorts",
+          "Maternity Wear",
+          "Premium Selection",
+          "Beauty",
+          " Care products"
+        ]
+      },
+      {
+        "header": "Gifting",
+        "link": ["Gift Cards"]
+      },
+      {
+        "header": "Sustainability",
+        "link": ["H&M Take Care", "Learn More"]
+      },
+      {
+        "header": "Magazine",
+        "link": ["Magazine"]
+      },
+      {
+        "header": "Shop by Occasion",
+        "link": ["Wedding", "Party Wear", "Office Wear"]
+      }
+    ],
+    "Men": {},
+    "Divided": {},
+    "Baby": {},
+    "Kids": {},
+    "M&H Home": {},
+    "Beauty": {},
+    "Sport": {},
+    "Sale": {},
+    "Sustainability": {}
   }
 }

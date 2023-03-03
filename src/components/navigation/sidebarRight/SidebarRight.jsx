@@ -56,7 +56,7 @@ const SidebarRight = () => {
           >
             <PersonIcon />
             <span style={match ? { display: "none" } : { display: "block" }}>
-              {loggedIn ? "Mijn Account" : "Inloggen"}
+              {loggedIn ? "My account" : "Sign in"}
             </span>
           </Link>
           <Grid2 sx={hover ? { display: "flex" } : { display: "none" }}>
@@ -72,7 +72,7 @@ const SidebarRight = () => {
           <Link variant="headerTop">
             <FavoriteIcon />
             <span style={match ? { display: "none" } : { display: "block" }}>
-              Favorieten
+              Favorites
             </span>
           </Link>
         </Box>
@@ -91,7 +91,7 @@ const SidebarRight = () => {
                   : {}
               }
             >
-              {match ? "(0)" : "Winkelmandje (0)"}
+              {match ? "(0)" : "Shopping bag (0)"}
             </span>
           </Link>
         </Box>

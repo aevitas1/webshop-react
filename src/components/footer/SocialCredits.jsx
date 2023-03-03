@@ -53,16 +53,17 @@ const SocialCredits = () => {
             fontWeight="500"
             marginBottom="0.5rem"
           >
-            De inhoud van deze website is auteursrechtelijk beschermd en
-            eigendom van ons nepbedrijf. Onze
+            The content of this site is copyright-protected and is the property
+            of our fake company. Our
             {show
-              ? ` filosofie is het bieden van
-            fashion en kwaliteit tegen de beste prijs op een duurzame manier. Wij
-          zijn in 2023 opgericht en sindsdien uitgegroeid tot een van leidende
-          fashionbedrijven in de wereld.`
+              ? ` philosophy is offering fashion and quality for a good price in a sustainable way. Company founded in 2023 and since then we've grown to be one of the leading fashioncompanies in the world.`
               : " ..."}
           </Typography>
-          <Button variant="flat" onClick={() => setShow(!show)}>
+          <Button
+            variant="flat"
+            sx={{ width: "100%" }}
+            onClick={() => setShow(!show)}
+          >
             {show ? "LEES MINDER" : "LEES MEER"}
           </Button>
         </Grid2>
@@ -76,7 +77,7 @@ const SocialCredits = () => {
           fontWeight="500"
           marginTop="0.5rem"
         >
-          Nederland | €
+          United States | $
         </Typography>
       </Grid2>
     </>

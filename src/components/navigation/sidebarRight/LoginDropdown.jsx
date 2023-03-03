@@ -36,7 +36,7 @@ const LoginDropdown = ({ hover, setHover }) => {
                 setOpenLoginModal(!openLoginModal);
               }}
             >
-              Inloggen
+              Sign in
             </Button>
           </>
         )}
@@ -48,10 +48,10 @@ const LoginDropdown = ({ hover, setHover }) => {
             loggedIn ? "" : setOpenLoginModal(true);
           }}
         >
-          Mijn account
+          My account
         </Link>
         <Link variant="headerTop" sx={{ paddingTop: "0.5rem" }}>
-          Membership info
+          Loyalty program info
         </Link>
         {loggedIn ? (
           <Button
@@ -69,7 +69,7 @@ const LoginDropdown = ({ hover, setHover }) => {
               minWidth: "fit-content",
             }}
           >
-            Uitloggen
+            Sign out
           </Button>
         ) : (
           <Button
@@ -78,7 +78,7 @@ const LoginDropdown = ({ hover, setHover }) => {
               setOpenAccountModal(true);
             }}
           >
-            Nog geen member? Meld je hier aan!
+            Not a member yet? Join here!
           </Button>
         )}
       </Grid2>

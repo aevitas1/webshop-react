@@ -8,15 +8,22 @@ import { Typography, TextField } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import InputAdornment from "@mui/material/InputAdornment";
-import { FormControlLabel, Checkbox, Link, FormGroup } from "@mui/material";
+import { FormGroup } from "@mui/material";
 
 const CreateAccountModal = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [birthday, setBirthday] = useState("");
+  const [birthmonth, setBirthmonth] = useState("");
+  const [birthyear, setBirthyear] = useState("");
+
   const [nameErr, setNameErr] = useState(false);
   const [passwordErr, setPasswordErr] = useState(false);
   const [birthdayErr, setBirthdayErr] = useState(false);
   const [birthmonthErr, setBirthmonthErr] = useState(false);
   const [birthyearErr, setBirthyearErr] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const {
     openLoginModal,
@@ -26,45 +33,71 @@ const CreateAccountModal = () => {
   } = useContext(AppContext);
 
   const { loginInfo, setLoginInfo } = useContext(LoginContext);
+  localStorage.clear();
+  console.log(nameErr);
 
   // Error checks
-  const handleClick = () => {
+  const errorCheck = () => {
     setNameErr(false);
     setPasswordErr(false);
     setBirthdayErr(false);
     setBirthmonthErr(false);
     setBirthyearErr(false);
-
-    if (loginInfo.name === "") {
-      setNameErr(true);
-    }
-    if (loginInfo.password === "") {
-      setPasswordErr(true);
-    }
-    if (loginInfo.birthday === "") {
-      setBirthdayErr(true);
-    }
-    if (loginInfo.birthmonth === "") {
-      setBirthmonthErr(true);
-    }
-    if (loginInfo.birthyear === "") {
-      setBirthyearErr(true);
-    }
+    setHasError(false);
 
     if (
-      !nameErr &&
-      !passwordErr &&
-      !birthdayErr &&
-      !birthmonthErr &&
-      !birthyearErr
+      name === "" ||
+      password === "" ||
+      birthday === "" ||
+      birthmonth === "" ||
+      birthyear === ""
     ) {
-      // If no errors, store the login info in localStorage & open login modal
-      localStorage.setItem("login", [JSON.stringify(loginInfo)]);
-      setOpenAccountModal(!openAccountModal);
-      setOpenLoginModal(!openLoginModal);
-    } else {
+      if (name === "") {
+        setNameErr(true);
+        setHasError(true);
+      }
+      if (password === "") {
+        setPasswordErr(true);
+        setHasError(true);
+      }
+      if (birthday === "") {
+        setBirthdayErr(true);
+        setHasError(true);
+      }
+      if (birthmonth === "") {
+        setBirthmonthErr(true);
+        setHasError(true);
+      }
+      if (birthyear === "") {
+        setBirthyearErr(true);
+        setHasError(true);
+      }
       return;
+    } else {
+      if (!hasError) {
+        saveLogin();
+      }
     }
+  };
+
+  // Storing the login info in localStorage
+  const saveLogin = () => {
+    setLoginInfo({
+      ...loginInfo,
+      name: name,
+      password: password,
+      birthday: birthday,
+      birthmonth: birthmonth,
+      birthyear: birthyear,
+    });
+    localStorage.setItem("login", [JSON.stringify(loginInfo)]);
+    setOpenAccountModal(!openAccountModal);
+    setOpenLoginModal(!openLoginModal);
+  };
+
+  // Become a member button
+  const handleClick = () => {
+    errorCheck();
   };
 
   return (
@@ -84,7 +117,7 @@ const CreateAccountModal = () => {
             }}
           >
             <Typography variant="h6" component="h2">
-              Word member
+              Become a member
             </Typography>
             <CloseIcon
               onClick={() => {
@@ -101,35 +134,29 @@ const CreateAccountModal = () => {
               textAlign: "center",
             }}
           >
-            Word member: mis geen deals, aanbiedingen, kortingen en
-            bonusvouchers.
+            Become a member -- you'll enjoy exclusive deals, offers, invites and
+            rewards.
           </Typography>
           <TextField
             fullWidth
-            label={"Naam"}
-            helperText={nameErr ? "Voer naam in" : ""}
+            label={"Name"}
+            helperText={nameErr ? "Fill in a name" : ""}
             variant="outlined"
             className="login"
             onChange={(e) => {
-              setLoginInfo({
-                ...loginInfo,
-                name: e.target.value,
-              });
+              setName(e.target.value);
             }}
             required
           />
           <TextField
             fullWidth
-            label={"Wachtwoord"}
-            helperText={passwordErr ? "Voer wachtwoord in" : ""}
+            label={"Password"}
+            helperText={passwordErr ? "Fill in a password" : ""}
             variant="outlined"
             className="login"
             type={showPassword ? "text" : "password"}
             onChange={(e) => {
-              setLoginInfo({
-                ...loginInfo,
-                password: e.target.value,
-              });
+              setPassword(e.target.value);
             }}
             InputProps={{
               endAdornment: (
@@ -141,18 +168,16 @@ const CreateAccountModal = () => {
                     ".MuiTypography-root": {
                       color: "#222",
                       userSelect: "none",
+                      fontSize: "0.8125rem",
                     },
                   }}
                 >
-                  {showPassword ? "Verbergen" : "Tonen"}
+                  {showPassword ? "HIDE" : "SHOW"}
                 </InputAdornment>
               ),
             }}
             required
           />
-          <Typography variant="subtitle1" sx={{ textAlign: "center" }}>
-            Wachtwoord moet 1 letter, 1 nummer en 1 leesteken bevatten
-          </Typography>
           <Typography
             variant="p"
             sx={{
@@ -160,7 +185,7 @@ const CreateAccountModal = () => {
               padding: "1rem 0 0.5rem 0rem",
             }}
           >
-            Geboortedatum *
+            Date of birth *
           </Typography>
           <FormGroup
             sx={{
@@ -169,16 +194,13 @@ const CreateAccountModal = () => {
             }}
           >
             <TextField
-              label={"dd"}
+              label={"DD"}
               variant="outlined"
               className="birthdate"
-              helperText={birthdayErr ? "Voer dag in" : ""}
+              helperText={birthdayErr ? "Fill in birth day" : ""}
               text="number"
               onChange={(e) => {
-                setLoginInfo({
-                  ...loginInfo,
-                  birthday: e.target.value,
-                });
+                setBirthday(e.target.value);
               }}
               InputProps={{
                 endAdornment: (
@@ -198,16 +220,13 @@ const CreateAccountModal = () => {
               required
             />
             <TextField
-              label={"mm"}
+              label={"MM"}
               variant="outlined"
               className="birthdate"
-              helperText={birthmonthErr ? "Voer maand in" : ""}
+              helperText={birthmonthErr ? "Fill in birth month" : ""}
               text="number"
               onChange={(e) => {
-                setLoginInfo({
-                  ...loginInfo,
-                  birthmonth: e.target.value,
-                });
+                setBirthmonth(e.target.value);
               }}
               InputProps={{
                 endAdornment: (
@@ -227,61 +246,35 @@ const CreateAccountModal = () => {
               required
             />
             <TextField
-              label={"jjjj"}
+              label={"YYYY"}
               variant="outlined"
               className="birthdate"
-              helperText={birthyearErr ? "Voer jaar in" : ""}
+              helperText={birthyearErr ? "Fill in birth year" : ""}
               text="number"
               onChange={(e) => {
-                setLoginInfo({
-                  ...loginInfo,
-                  birthyear: e.target.value,
-                });
+                setBirthyear(e.target.value);
               }}
               required
             />
           </FormGroup>
-          <Grid2 display="flex" justifyContent="space-between">
-            <FormControlLabel
-              control={
-                <Checkbox
-                  onChange={(e) => {
-                    setLoginInfo({
-                      ...loginInfo,
-                      remember: e.target.checked ? true : false,
-                    });
-                  }}
-                />
-              }
-              label="Gegevens onthouden"
-              sx={{
-                ".MuiTypography-root": {
-                  fontSize: "0.8rem",
-                  fontWeight: "500",
-                },
-              }}
-            />
-            <Link variant="underline">Wachtwoord vergeten?</Link>
-          </Grid2>
           <Typography
             sx={{
-              color: "red",
               fontSize: "10px",
               fontWeight: "700",
               textAlign: "center",
             }}
           >
-            Uw gegevens worden alleen in uw browser opgeslagen, deze kunnen wij
-            niet zien. Door op 'word member' te drukken maakt u een account aan
-            die alleen beschikbaar is voor u, hierdoor kunt u verschillende
-            features gebruiken op de website.
+            Your data will only be saved in your browser, we cannot see it. By
+            pressing 'Become a member' you create an account that is only
+            available to you, which allows you to use different features on the
+            website.
           </Typography>
           <Button
             variant="primary"
             sx={{ marginTop: "1rem" }}
             onClick={handleClick}
           >
-            Word member
+            Become a member
           </Button>
           <Button
             variant="secondary"
@@ -291,14 +284,8 @@ const CreateAccountModal = () => {
               setOpenLoginModal(!openLoginModal);
             }}
           >
-            Inloggen
+            Sign in
           </Button>
-          <Link
-            variant="underline"
-            sx={{ justifyContent: "center", width: "100%", margin: "1rem 0" }}
-          >
-            Membership info
-          </Link>
         </Box>
       </Modal>
     </>
