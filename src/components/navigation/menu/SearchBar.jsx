@@ -32,7 +32,7 @@ const SearchBar = () => {
             right: "0",
             width: "calc(8vw + 4rem)",
             bottom: "2.5rem",
-            zIndex: "1000",
+            zIndex: "5",
           }}
         >
           <SearchIcon

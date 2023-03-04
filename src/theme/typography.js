@@ -70,6 +70,12 @@ const typography = {
         lineHeight: '1rem',
         fontWeight: '500',
     },
+    p_bold: {
+        fontSize: '0.8125rem',
+        letterSpacing: '0.035rem',
+        lineHeight: '1rem',
+        fontWeight: '600',
+    },
     subtitle1: {
         fontSize: '0.6875rem',
         letterSpacing: '0.035rem',

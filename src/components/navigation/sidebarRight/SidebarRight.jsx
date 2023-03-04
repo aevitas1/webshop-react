@@ -7,12 +7,13 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import SearchIcon from "@mui/icons-material/Search";
 import LoginDropdown from "./LoginDropdown";
 import LoginContext from "../../../context/LoginContext";
-import SearchBar from "../menu/SearchBar";
+import ShoppingCartDropdown from "./ShoppingCartDropdown";
 import { Link } from "@mui/material";
 
 const SidebarRight = () => {
   const match = useMediaQuery("@media screen and (max-width: 1024px)");
   const [hover, setHover] = useState(false);
+  const [cartHover, setCartHover] = useState(false);
   const { loggedIn, openSearchMobile, setOpenSearchMobile } =
     useContext(LoginContext);
 
@@ -53,7 +54,7 @@ const SidebarRight = () => {
             </span>
           </Link>
           <Grid2 sx={hover ? { display: "flex" } : { display: "none" }}>
-            <LoginDropdown hover={hover} setHover={setHover} />
+            <LoginDropdown setHover={setHover} />
           </Grid2>
         </Box>
         <Box
@@ -73,7 +74,11 @@ const SidebarRight = () => {
           </Link>
         </Box>
         <Box>
-          <Link variant="headerTop">
+          <Link
+            variant="headerTop"
+            onMouseEnter={() => setCartHover(!cartHover)}
+            onMouseLeave={() => setCartHover(!cartHover)}
+          >
             <ShoppingBagIcon />
             <span
               style={
@@ -81,7 +86,7 @@ const SidebarRight = () => {
                   ? {
                       position: "absolute",
                       color: "#222",
-                      right: "0.4rem",
+                      right: "0.3rem",
                       top: "1.5rem",
                     }
                   : {}
@@ -90,6 +95,9 @@ const SidebarRight = () => {
               {match ? "(0)" : "Shopping bag (0)"}
             </span>
           </Link>
+          <Grid2 sx={cartHover ? { display: "flex" } : { display: "none" }}>
+            <ShoppingCartDropdown setHover={setCartHover} />
+          </Grid2>
         </Box>
       </Grid2>
     </>
