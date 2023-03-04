@@ -4,6 +4,8 @@ const LoginContext = createContext();
 
 export const LoginProvider = ({ children }) => {
   const [loggedIn, setLoggedIn] = useState(false);
+  const [searchBar, setSearchBar] = useState("");
+  const [openSearchMobile, setOpenSearchMobile] = useState(false);
 
   const [loginInfo, setLoginInfo] = useState({
     name: "",
@@ -38,6 +40,10 @@ export const LoginProvider = ({ children }) => {
         setLoggedIn,
         loginInfo,
         setLoginInfo,
+        searchBar,
+        setSearchBar,
+        openSearchMobile,
+        setOpenSearchMobile,
       }}
     >
       {children}

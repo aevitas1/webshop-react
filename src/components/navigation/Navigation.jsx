@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { useMediaQuery } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import SidebarLeft from "./sidebarLeft/SidebarLeft";
@@ -5,8 +6,10 @@ import SidebarRight from "./sidebarRight/SidebarRight";
 import Logo from "../customComponents/Logo";
 import Infobar from "./menu/Infobar";
 import MainMenu from "./menu/MainMenu";
+import LoginContext from "../../context/LoginContext";
 
 const Navigation = () => {
+  const { openSearchMobile } = useContext(LoginContext);
   const match = useMediaQuery("@media screen and (max-width: 1024px)");
   return (
     <>
@@ -28,7 +31,7 @@ const Navigation = () => {
           }
         >
           <SidebarLeft />
-          <Logo variant="logo_header" />
+          {openSearchMobile ? "" : <Logo variant="logo_header" />}
           <SidebarRight />
         </Grid2>
         <MainMenu />

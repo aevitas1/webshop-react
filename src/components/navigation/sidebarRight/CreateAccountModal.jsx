@@ -30,8 +30,6 @@ const CreateAccountModal = () => {
   } = useContext(AppContext);
 
   const { loginInfo, setLoginInfo } = useContext(LoginContext);
-  localStorage.clear();
-  console.log(nameErr);
 
   // Error checks
   const errorCheck = () => {

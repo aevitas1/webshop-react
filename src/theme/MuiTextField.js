@@ -18,10 +18,56 @@ const TextField = {
                 '.MuiInputBase-input': {
                     border: 'none',
                     borderBottom: '1px solid #222',
+                    fontSize: '0.8125rem',
+                    paddingLeft: '0.25rem'
                 },
                 '.MuiOutlinedInput-notchedOutline': {
                     border: 'none'
-                }
+                },
+                '.MuiInputBase-root': {
+                    '&:hover': {
+                        '&::before': {
+                            borderBottom: '1px solid rgba(0, 0, 0, 0.42)'
+                        }
+                    },
+                    '&::after': {
+                        borderBottom: '1px solid rgba(0, 0, 0, 0.42)'
+                    }
+                },
+                '.MuiInputLabel-root': {
+                    fontSize: '0.8125rem',
+                    paddingLeft: '0.25rem'
+
+                },
+            },
+            '&.search_mobile': {
+                '.MuiInputBase-input': {
+                    border: 'none',
+                    borderBottom: 'none',
+                    fontSize: '0.8125rem',
+                    paddingLeft: '1rem'
+                },
+                '.MuiOutlinedInput-notchedOutline': {
+                    border: 'none'
+                },
+                '.MuiInputBase-root': {
+                    '&:hover': {
+                        '&::before': {
+                            border: 'none'
+                        }
+                    },
+                    '&::before': {
+                        border: 'none'
+                    },
+                    '&::after': {
+                        border: 'none'
+                    }
+                },
+                '.MuiInputLabel-root': {
+                    fontSize: '0.8125rem',
+                    paddingLeft: '1rem'
+
+                },
             },
             '&.login': {
                 marginTop: '1rem',

@@ -2,6 +2,7 @@ import { getLinks } from "../../../hooks/getLinks";
 import { Container, useMediaQuery, Typography, Link, Box } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Masonry from "@mui/lab/Masonry";
+import SearchBar from "./SearchBar";
 
 const MainMenu = () => {
   const links = getLinks();
@@ -90,6 +91,7 @@ const MainMenu = () => {
             </Grid2>
           ))}
         </Container>
+        <SearchBar />
       </>
     )
   );

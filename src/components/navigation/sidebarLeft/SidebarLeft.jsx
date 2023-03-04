@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Link, Box, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LoginContext from "../../../context/LoginContext";
 
 const SidebarLeft = () => {
   const [open, setOpen] = useState(false);
+  const { openSearchMobile } = useContext(LoginContext);
   const match = useMediaQuery("@media screen and (max-width: 1024px)");
-  return match ? (
+
+  return match && !openSearchMobile ? (
     <>
       <MenuIcon />
     </>

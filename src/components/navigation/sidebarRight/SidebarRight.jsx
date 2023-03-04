@@ -7,12 +7,14 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import SearchIcon from "@mui/icons-material/Search";
 import LoginDropdown from "./LoginDropdown";
 import LoginContext from "../../../context/LoginContext";
-
+import SearchBar from "../menu/SearchBar";
 import { Link } from "@mui/material";
+
 const SidebarRight = () => {
   const match = useMediaQuery("@media screen and (max-width: 1024px)");
   const [hover, setHover] = useState(false);
-  const { loggedIn } = useContext(LoginContext);
+  const { loggedIn, openSearchMobile, setOpenSearchMobile } =
+    useContext(LoginContext);
 
   return (
     <>
@@ -21,18 +23,9 @@ const SidebarRight = () => {
         alignItems="center"
         position="relative"
         sx={
-          match
+          match && openSearchMobile
             ? {
-                gap: "1rem",
-                ".MuiBox-root": {
-                  a: {
-                    display: "flex",
-                    alignItems: "center",
-                    svg: {
-                      width: "28px",
-                    },
-                  },
-                },
+                display: "none",
               }
             : {
                 gap: "1rem",
@@ -63,7 +56,10 @@ const SidebarRight = () => {
             <LoginDropdown hover={hover} setHover={setHover} />
           </Grid2>
         </Box>
-        <Box sx={match ? {} : { display: "none" }}>
+        <Box
+          sx={match ? {} : { display: "none" }}
+          onClick={() => setOpenSearchMobile(!openSearchMobile)}
+        >
           <Link variant="headerTop">
             <SearchIcon />
           </Link>

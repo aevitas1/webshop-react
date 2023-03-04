@@ -64,7 +64,7 @@ const SocialCredits = () => {
             sx={{ width: "100%" }}
             onClick={() => setShow(!show)}
           >
-            {show ? "LEES MINDER" : "LEES MEER"}
+            {show ? "Read less" : "Read more"}
           </Button>
         </Grid2>
         <Logo variant="logo_footer" />

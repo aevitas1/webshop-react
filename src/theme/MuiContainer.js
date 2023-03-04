@@ -55,17 +55,14 @@ const MuiContainer = {
             style: {
                 display: 'flex',
                 justifyContent: 'space-around',
-                gap: '1rem',
                 width: '960px',
                 '@media (min-width: 600px)': {
                     padding: '3rem 4rem 3rem 4rem',
+                },
+                '@media screen and (max-width:82.18rem)': {
+                    gap: '0.75rem',
+                    justifyContent: 'center'
                 }
-                // '@media screen and (max-width: 64rem)': {
-                //     paddingBottom: '3rem',
-                // },
-                // '@media screen and (max-width: 48rem)': {
-                //     padding: '1.5rem 1rem 1rem 1rem',
-                // },
             },
         },
     ]
