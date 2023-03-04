@@ -1,14 +1,11 @@
 import { useState, useContext } from "react";
 import AppContext from "../../../context/AppContext";
 import LoginContext from "../../../context/LoginContext";
-import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
-import { Typography, TextField } from "@mui/material";
+import { Box, Typography, TextField, FormGroup, Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import InputAdornment from "@mui/material/InputAdornment";
-import { FormGroup } from "@mui/material";
 
 const CreateAccountModal = () => {
   const [showPassword, setShowPassword] = useState(false);

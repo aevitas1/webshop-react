@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import { ThemeProvider } from "@mui/material/styles";
-import { CssBaseline } from "@mui/material";
 import { AppProvider } from "./context/AppContext";
 import { LoginProvider } from "./context/LoginContext";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -16,23 +14,19 @@ import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/montserrat/800.css";
 import "@fontsource/montserrat/900.css";
-import { Theme } from "./theme/Theme";
 
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <ThemeProvider theme={Theme}>
-        <CssBaseline />
-        <AppProvider>
+      <AppProvider>
+        <LoginProvider>
           <QueryClientProvider client={queryClient}>
-            <LoginProvider>
-              <App />
-            </LoginProvider>
+            <App />
           </QueryClientProvider>
-        </AppProvider>
-      </ThemeProvider>
+        </LoginProvider>
+      </AppProvider>
     </Router>
   </React.StrictMode>
 );

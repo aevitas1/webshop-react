@@ -1,6 +1,7 @@
 import { getLinks } from "../../../hooks/getLinks";
-import { Container, useMediaQuery, Typography, Link } from "@mui/material";
+import { Container, useMediaQuery, Typography, Link, Box } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import Masonry from "@mui/lab/Masonry";
 
 const MainMenu = () => {
   const links = getLinks();
@@ -44,39 +45,29 @@ const MainMenu = () => {
                   top: "8.5rem",
                   padding: "2rem 2rem 3.5rem 2rem",
                   width: "100vw",
-                  height: "auto",
+                  maxHeight: "90vh",
                   backgroundColor: "#faf9f8",
                   borderBottom: "5px solid #222",
+                  justifyContent: "center",
                 }}
               >
-                <Grid2
-                  container
+                <Masonry
+                  columns={4}
                   position="relative"
                   sx={{
-                    width: "960px",
-                    margin: "0 auto",
-                    padding: "0 5rem",
-                    maxHeight: "70vh",
-                    // gridTemplateRows: "repeat(1fr)",
-                    // gridTemplateColumns: "repeat(1fr)",
-                    gridRowGap: "16px",
-                    alignItems: "start",
-                    gridAutoRows: "fit-content" /* OR min-content*/,
-                    marginBottom: "auto",
-                    // display: "flex",
-                    // flexWrap: "wrap",
+                    maxWidth: "960px",
+                    padding: "0 3rem",
+                    Content: "center",
                   }}
                 >
                   {item.links.map((submenu) => (
                     // Submenu items
-                    <Grid2
-                      container
+                    <Box
                       key={`${submenu.header}${firstId++}`}
                       sx={{
-                        display: "grid",
-                        maxHeight: "max-content",
-                        // flexDirection: "column",
-                        width: "25%",
+                        display: "flex",
+                        flexDirection: "column",
+                        padding: "0 3% 0.5rem 3%",
                         paddingBottom: "0.5rem",
                       }}
                     >
@@ -92,9 +83,9 @@ const MainMenu = () => {
                           {link}
                         </Link>
                       ))}
-                    </Grid2>
+                    </Box>
                   ))}
-                </Grid2>
+                </Masonry>
               </Grid2>
             </Grid2>
           ))}

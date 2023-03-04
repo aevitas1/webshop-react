@@ -63,26 +63,6 @@
           ]
         },
         {
-          "header": "Trending Now",
-          "link": [
-            "New season edit",
-            "Effortless tailoring",
-            "M&H Edition",
-            "Sun-kissed styles",
-            "Festival",
-            "The Wedding Shop",
-            "M&H Williamsburg: No2_MOVE"
-          ]
-        },
-        {
-          "header": "Offers",
-          "link": [
-            "Student Discount",
-            "Sale up to 50%",
-            "Member Prices from $4.99"
-          ]
-        },
-        {
           "header": "Shop by Product",
           "link": [
             "View All",
@@ -119,6 +99,26 @@
           "link": ["Gift Cards"]
         },
         {
+          "header": "Trending Now",
+          "link": [
+            "New season edit",
+            "Effortless tailoring",
+            "M&H Edition",
+            "Sun-kissed styles",
+            "Festival",
+            "The Wedding Shop",
+            "M&H Williamsburg: No2_MOVE"
+          ]
+        },
+        {
+          "header": "Offers",
+          "link": [
+            "Student Discount",
+            "Sale up to 50%",
+            "Member Prices from $4.99"
+          ]
+        },
+        {
           "header": "Sustainability",
           "link": ["M&H Take Care", "Learn More"]
         },
@@ -142,32 +142,6 @@
             "Clothes",
             " Shoes and Accessories",
             "Sportswear"
-          ]
-        },
-        {
-          "header": "The essentials",
-          "link": ["About", " Core collection"]
-        },
-        {
-          "header": " Spring lookbook",
-          "link": ["Casual looks", " Smart looks", "Street looks"]
-        },
-        {
-          "header": "Offers & Deals",
-          "link": [
-            "Sale up to 50% off",
-            "Member Prices from $10.99",
-            "Socks : B2G1",
-            "Student Discount"
-          ]
-        },
-        {
-          "header": "Trending Now",
-          "link": [
-            "Keith Haring X HM",
-            "Top sellers from $6.99",
-            "Blank Staples",
-            "The Graphics Shop"
           ]
         },
         {
@@ -198,6 +172,32 @@
           ]
         },
         {
+          "header": "The essentials",
+          "link": ["About", " Core collection"]
+        },
+        {
+          "header": " Spring lookbook",
+          "link": ["Casual looks", " Smart looks", "Street looks"]
+        },
+        {
+          "header": "Offers & Deals",
+          "link": [
+            "Sale up to 50% off",
+            "Member Prices from $10.99",
+            "Socks : B2G1",
+            "Student Discount"
+          ]
+        },
+        {
+          "header": "Trending Now",
+          "link": [
+            "Keith Haring X HM",
+            "Top sellers from $6.99",
+            "Blank Staples",
+            "The Graphics Shop"
+          ]
+        },
+        {
           "header": "Sustainability",
           "link": ["M&H Take Care", "Learn More", "Gifting", "Gift Cards"]
         }
@@ -209,23 +209,6 @@
         {
           "header": "New Arrivals",
           "link": ["Clothes", "Shoes & Accessories"]
-        },
-        {
-          "header": "Offers & Deals",
-          "link": [
-            "Student Discount",
-            "Member Prices from $4.99",
-            "Sale up to 50% off"
-          ]
-        },
-        {
-          "header": "Trending Now",
-          "link": [
-            "Festival",
-            "Spring looks",
-            "Music, Movies & Logos",
-            "The Unisex Shop"
-          ]
         },
         {
           "header": "Shop by Product",
@@ -252,6 +235,23 @@
           ]
         },
         {
+          "header": "Offers & Deals",
+          "link": [
+            "Student Discount",
+            "Member Prices from $4.99",
+            "Sale up to 50% off"
+          ]
+        },
+        {
+          "header": "Trending Now",
+          "link": [
+            "Festival",
+            "Spring looks",
+            "Music, Movies & Logos",
+            "The Unisex Shop"
+          ]
+        },
+        {
           "header": "Gifting",
           "link": ["Gift Cards"]
         },
@@ -267,6 +267,18 @@
         {
           "header": "Offers & Deals",
           "link": ["Member Prices from $11.99", "Sale up to 50% off"]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Outerwear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
         },
         {
           "header": "Popular Now",
@@ -313,18 +325,6 @@
           ]
         },
         {
-          "header": "Shop by Product",
-          "link": [
-            "View all",
-            "New Arrivals",
-            "Clothing",
-            "Outerwear",
-            "Accessories",
-            "Shoes",
-            "Costumes"
-          ]
-        },
-        {
           "header": " Sustainability",
           "link": ["M&H Take Care", "Learn More"]
         }
@@ -336,6 +336,20 @@
         {
           "header": "Offers & Deals",
           "link": [" Member Prices from $11.99", " Sale up to 50% off"]
+        },
+        {
+          "header": "Shop by Product",
+          "link": [
+            "View all",
+            "New Arrivals",
+            "Clothing",
+            "Swimwear",
+            "Outerwear",
+            "Activewear",
+            "Accessories",
+            "Shoes",
+            "Costumes"
+          ]
         },
         {
           "header": "Popular Now",
@@ -402,20 +416,6 @@
             "Shoes",
             "Costumes",
             "Party Occasion"
-          ]
-        },
-        {
-          "header": "Shop by Product",
-          "link": [
-            "View all",
-            "New Arrivals",
-            "Clothing",
-            "Swimwear",
-            "Outerwear",
-            "Activewear",
-            "Accessories",
-            "Shoes",
-            "Costumes"
           ]
         },
         {
