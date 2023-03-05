@@ -1,8 +1,8 @@
 import { useState, useContext } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Link, Box, useMediaQuery } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import LoginContext from "../../../context/LoginContext";
+import MobileMenu from "../menu/MobileMenu";
 
 const SidebarLeft = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +11,7 @@ const SidebarLeft = () => {
 
   return match && !openSearchMobile ? (
     <>
-      <MenuIcon />
+      <MobileMenu />
     </>
   ) : (
     <>

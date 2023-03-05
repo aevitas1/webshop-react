@@ -9,6 +9,7 @@ import MuiAccordionDetails from "./Accordion/MuiAccordionDetails";
 import MuiAccordionSummary from "./Accordion/MuiAccordionSummary";
 import MuiTextField from "./MuiTextField";
 import MuiModal from "./MuiModal";
+import MuiDrawer from "./MuiDrawer";
 
 
 export const Theme = createTheme({
@@ -21,7 +22,8 @@ export const Theme = createTheme({
         MuiAccordionDetails,
         MuiAccordionSummary,
         MuiTextField,
-        MuiModal
+        MuiModal,
+        MuiDrawer
     },
     typography,
 });

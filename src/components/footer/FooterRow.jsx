@@ -69,7 +69,11 @@ const FooterRow = () => {
             >
               {links.data.data.footer.sign_up.text}
             </Typography>
-            <ArrowButton Width="fit-content" Text="Read more" />
+            <ArrowButton
+              Width="fit-content"
+              Text="Read more"
+              FontSize="0.875rem"
+            />
           </Grid2>
         </Grid2>
 
@@ -153,7 +157,7 @@ const FooterRow = () => {
             >
               {links.data.data.footer.sign_up.text}
             </Typography>
-            <ArrowButton Width="100%" Text="Read more" />
+            <ArrowButton Width="100%" Text="Read more" FontSize="0.875rem" />
           </Grid2>
         </Grid2>
       </>

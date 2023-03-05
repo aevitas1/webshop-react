@@ -164,11 +164,11 @@ const MuiButton = {
             },
             style: {
                 backgroundColor: 'transparent',
+                textTransform: 'none',
                 border: 'none',
                 borderRadius: '0',
                 padding: '0 26px 0 16px',
                 color: '#222',
-                fontSize: "0.8125rem",
                 fontWeight: "600",
                 letterSpacing: "0.035rem",
                 '&:hover': {
