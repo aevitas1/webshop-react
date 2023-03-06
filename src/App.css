@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* Additional accordion styles  */
 .MuiPaper-root.MuiAccordion-root::before {
   display: none;
 }
 .MuiAccordionSummary-expandIconWrapper svg {
   fill: #222;
+}
+
+ul {
+  transition: 0.2s ease all;
 }
